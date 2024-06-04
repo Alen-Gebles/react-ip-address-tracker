@@ -1,0 +1,100 @@
+:root {
+  --very-dark-gray: hsl(0, 0%, 17%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+.ip-data {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+  text-align: center;
+}
+
+.ip-data h1 {
+  font-weight: 500;
+  font-size: 40px;
+  color: white;
+}
+
+.ip-data .search {
+  margin: 40px 0;
+
+}
+.ip-data input {
+  padding: 10px 20px;
+  height: 50px;
+  width: 550px;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 0px 10px 20px rgba(43, 43, 43, 0.2);
+  color: var(--very-dark-gray);
+}
+.ip-data button {
+  padding: 10px 20px;
+  height: 50px;
+  border-radius: 0 5px 5px 0;
+  background-color: var(--dark-gray);
+  box-shadow: 0px 10px 20px rgba(43, 43, 43, 0.2);
+}
+.ip-data button:hover,
+.ip-data button:active {
+  background-color: hsl(0, 0%, 50%);
+}
+
+.info-container {
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+  color: var(--very-dark-gray);
+  background-color: white;
+  box-shadow: 0px 10px 20px rgba(43, 43, 43, 0.2);
+}
+
+@media screen and (max-width: 1050px) {
+  .ip-data .search {
+    margin: 10% 0;
+  }
+  .ip-data h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .ip-data .search {
+    margin: 5% 0;
+  }
+  .info-container {
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .ip-data input {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .ip-data {
+    width: 90%;
+  }
+
+  .ip-data input {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .ip-data .search {
+    margin: 10% 0;
+  }
+  .ip-data input {
+    width: 80%;
+  }
+  .ip-data h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .ip-data input {
+    width: 70%;
+  }
+}
